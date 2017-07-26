@@ -1,0 +1,37 @@
+{
+    "name": "web-themer",
+    "version": "1.0.0-beta.1",
+    "description": "Customizable theme generator for web applications.",
+    "main": "cli.js",
+    "preferGlobal": true,
+    "scripts": {
+        "bump": "npm version prerelease --no-git-tag-version",
+        "postpublish": "npm run bump"
+    },
+    "bin": {
+        "web-themer": "./cli.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JeevanJames/web-themer.git"
+    },
+    "keywords": [
+        "css",
+        "sass",
+        "less",
+        "themer",
+        "theme",
+        "web"
+    ],
+    "author": "Jeevan James",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/JeevanJames/web-themer/issues"
+    },
+    "homepage": "https://github.com/JeevanJames/web-themer#readme",
+    "dependencies": {
+        "chalk": "^2.0.1",
+        "lodash": "^4.17.4",
+        "minimist": "^1.2.0"
+    }
+}
