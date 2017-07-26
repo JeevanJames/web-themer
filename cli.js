@@ -10,12 +10,16 @@ const _ = require('lodash');
 
 const helpCommand = require(`./lib/command/help`);
 
+function displayHelp() {
+    helpCommand.run({ '_': [] });
+}
+
 let allArgs = process.argv;
 let runningFromNode = _.endsWith(allArgs[0].toLowerCase(), 'node.exe');
 
 let argsCount = runningFromNode ? allArgs.length - 3 : allArgs.length - 2;
 if (argsCount < 0) {
-    console.log(chalk.red(`Invalid number of arguments. Please specify a command.`));
+    displayHelp();
     return -1;
 }
 
@@ -30,7 +34,7 @@ try {
     if (argv.verbose) {
         console.log(chalk.white.bgRed(ex));
     }
-    helpCommand.run({ '_': [] });
+    displayHelp();
     return -1;
 }
 

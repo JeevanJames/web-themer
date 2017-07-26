@@ -1,6 +1,6 @@
 {
     "name": "web-themer",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.3",
     "description": "Customizable theme generator for web applications.",
     "main": "cli.js",
     "preferGlobal": true,
@@ -31,7 +31,11 @@
     "homepage": "https://github.com/JeevanJames/web-themer#readme",
     "dependencies": {
         "chalk": "^2.0.1",
+        "del": "^3.0.0",
         "lodash": "^4.17.4",
-        "minimist": "^1.2.0"
+        "minimist": "^1.2.0",
+        "mkdirp": "^0.5.1",
+        "node-dir": "^0.1.17",
+        "node-sass": "^4.5.3"
     }
 }
