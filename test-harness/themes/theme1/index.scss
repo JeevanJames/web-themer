@@ -1,0 +1,10 @@
+@import "../variables";
+
+.specific {
+    background-color: lighten($primaryColor, 40%);
+    color: orange;
+}
+
+.header {
+    border: dashed 2px salmon;
+}

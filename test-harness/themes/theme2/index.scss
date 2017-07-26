@@ -1,0 +1,6 @@
+@import "../variables";
+
+.specific {
+    background-color: darken($primaryColor, 50%);
+    border: yellow solid 1px;
+}

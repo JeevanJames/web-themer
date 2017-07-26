@@ -6,7 +6,9 @@
     "preferGlobal": true,
     "scripts": {
         "bump": "npm version prerelease --no-git-tag-version",
-        "postpublish": "npm run bump"
+        "postpublish": "npm run bump",
+        "test-build": "node cli build --directory ./test-harness/themes --output ./test-harness/output",
+        "test-watch": "node cli watch --directory ./test-harness/themes --output ./test-harness/output"
     },
     "bin": {
         "web-themer": "./cli.js"
@@ -31,6 +33,7 @@
     "homepage": "https://github.com/JeevanJames/web-themer#readme",
     "dependencies": {
         "chalk": "^2.0.1",
+        "chokidar": "^1.7.0",
         "del": "^3.0.0",
         "lodash": "^4.17.4",
         "minimist": "^1.2.0",

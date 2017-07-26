@@ -1,3 +1,6 @@
+# Project-specific
+test-harness/output
+
 # Logs
 logs
 *.log
