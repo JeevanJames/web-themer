@@ -2,9 +2,9 @@
 
 .specific {
     background-color: lighten($primaryColor, 40%);
-    color: orange;
+    color: $primaryColor;
 }
 
 .header {
-    border: dashed 2px salmon;
+    border: dashed 2px red;
 }

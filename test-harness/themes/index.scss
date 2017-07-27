@@ -3,3 +3,5 @@
 .common {
     background-color: $secondaryColor;
 }
+
+@import "./<%theme%>/index";
