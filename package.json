@@ -1,6 +1,6 @@
 {
     "name": "web-themer",
-    "version": "1.0.0-beta.3",
+    "version": "1.0.0-beta.13",
     "description": "Customizable theme generator for web applications.",
     "main": "cli.js",
     "preferGlobal": true,
@@ -8,7 +8,7 @@
         "bump": "npm version prerelease --no-git-tag-version",
         "postpublish": "npm run bump",
         "test-build": "node cli build --directory ./test-harness/themes --output ./test-harness/output",
-        "test-watch": "node cli watch --directory ./test-harness/themes --output ./test-harness/output"
+        "test-watch": "node cli watch --directory ./test-harness/themes --output ./test-harness/output --theme theme1"
     },
     "bin": {
         "web-themer": "./cli.js"
@@ -34,6 +34,7 @@
     "dependencies": {
         "chalk": "^2.0.1",
         "chokidar": "^1.7.0",
+        "copy": "^0.3.0",
         "del": "^3.0.0",
         "lodash": "^4.17.4",
         "minimist": "^1.2.0",
